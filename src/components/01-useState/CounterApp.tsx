@@ -1,5 +1,6 @@
 import { useState } from "react";
 import InitialEstate from "./couterInterface";
+import { Button } from 'react-bootstrap';
 
 
 
@@ -19,7 +20,7 @@ const CounterApp = () => {
       <h1>Counter {counter2}</h1> 
 
       <hr />
-      <button
+      <Button
         className="btn btn-primary"
         onClick={() => {
           setCounter({ 
@@ -28,7 +29,7 @@ const CounterApp = () => {
         }}
       >
         +1
-      </button>
+      </Button>
     </>
   );
 };
